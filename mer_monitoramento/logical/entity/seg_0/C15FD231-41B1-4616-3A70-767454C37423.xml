@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C15FD231-41B1-4616-3A70-767454C37423" name="sensor_tipo_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 02:02:46 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipo_sensor" id="C335E15B-B1E6-0ECA-F5F9-D064027A5247">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 02:03:40 UTC</createdTime>
+<generatorID>E9A94B69-A526-FE4D-FA42-09BB1B0966ED</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<referedAttribute>53DB9DC4-163A-B39B-5B4B-7A60502063C2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sensor" id="3536A13C-78C3-C856-DBAC-D286F91850EC">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 02:03:22 UTC</createdTime>
+<generatorID>F788C963-777D-5636-CDC3-493D5FAA97A6</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<referedAttribute>6219D4D6-0559-E65A-BCD5-4919757F02E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="669F1470-8EDE-6A2E-508D-53E85375550D" name="sensor_tipo_sensor PK">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 02:03:45 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3536A13C-78C3-C856-DBAC-D286F91850EC</attributeRef>
+<attributeRef>C335E15B-B1E6-0ECA-F5F9-D064027A5247</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

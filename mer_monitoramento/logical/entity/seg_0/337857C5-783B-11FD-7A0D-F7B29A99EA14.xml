@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="337857C5-783B-11FD-7A0D-F7B29A99EA14" name="sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:20:09 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_sensor" id="6219D4D6-0559-E65A-BCD5-4919757F02E6">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:21:35 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cultura" id="82AF9F7F-0AF7-20FA-5A25-98A1F27AD455">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 00:30:57 UTC</createdTime>
+<generatorID>1CD2DE0B-FCFA-E915-1B01-2DFF3BEB0793</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<referedAttribute>1257179E-E75E-CB40-55E1-999D57990EDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_serie" id="426B01BC-67E8-4119-9564-6BC7EC782BF5">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 11:05:56 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4AB2A415-CFA4-4A4D-98D1-6090204FCF7A" name="sensor PK">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:22:17 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6219D4D6-0559-E65A-BCD5-4919757F02E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

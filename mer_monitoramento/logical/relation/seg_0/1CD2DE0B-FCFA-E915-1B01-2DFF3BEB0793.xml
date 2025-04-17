@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="monitorada" directorySegmentName="seg_0" id="1CD2DE0B-FCFA-E915-1B01-2DFF3BEB0793">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 00:30:57 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<sourcePk>AEE9E06E-1BD0-826E-897B-D0EC054A42D3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>28A139DF-750E-CA2B-331F-5A257B1774FA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>337857C5-783B-11FD-7A0D-F7B29A99EA14</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

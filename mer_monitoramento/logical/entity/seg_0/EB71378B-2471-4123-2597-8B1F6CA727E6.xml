@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB71378B-2471-4123-2597-8B1F6CA727E6" name="agua_aplicada">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:27:23 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_agua_aplicada" id="318B93A6-AA9C-CEC9-21A8-C3EB629B50BD">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:29:10 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sensor" id="83B8162A-3429-AED7-11B4-896A7D2FE896">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-17 00:54:50 UTC</createdTime>
+<generatorID>A33991DC-FFD9-BCB1-CBF1-6EE067C3A706</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<referedAttribute>6219D4D6-0559-E65A-BCD5-4919757F02E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="volume_agua_aplicada" id="CEC32BA5-127C-DE18-893E-B65B47B02D7D">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:30:45 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,7,4</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora_inicio_aplicacao" id="26677A6F-B36E-0173-D4D6-E056F35C744E">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:30:11 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_hora_fim_aplicacao" id="F335A91F-721F-BB67-B7D8-6672676A628D">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-15 00:43:01 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="751D6AE2-6B78-FAA0-E913-A463A86E8F98" name="agua_aplicada PK">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:29:27 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>318B93A6-AA9C-CEC9-21A8-C3EB629B50BD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

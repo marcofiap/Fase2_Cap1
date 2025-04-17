@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="mer_monitoramento" id="F3062977-5717-052F-C1AB-943033B031FB" version="3.5">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-14 23:15:02 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>F3062977-5717-052F-C1AB-943033B031FB</designId>
+</OSDM_Design>
