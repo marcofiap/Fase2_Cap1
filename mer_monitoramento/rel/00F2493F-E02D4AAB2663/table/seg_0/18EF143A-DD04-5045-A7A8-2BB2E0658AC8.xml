@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18EF143A-DD04-5045-A7A8-2BB2E0658AC8" name="cultura">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>28A139DF-750E-CA2B-331F-5A257B1774FA</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cultura" id="B8AB6921-FBBA-53B0-2083-7F0EA4D18890">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>1257179E-E75E-CB40-55E1-999D57990EDF</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao_cultura" id="EB6F9933-7485-B4A3-05F1-DE675DB25BCB">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>67871F56-B0ED-3503-64C6-48BAE85FBE86</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ativo" id="F0D4B75C-E863-864D-0B46-ACB161B85AE6">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>A735CE65-3BDD-A23A-B412-EF358DAE1698</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="area_plantada" id="87C42ECC-069B-82A5-D5FD-00827E5944E9">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>56E275D5-FCB1-7494-A005-7476CD4AD43F</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7CD7F45-6D25-A7C3-5AB9-CE7FB3FD7D74" name="PK_cultura">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>AEE9E06E-1BD0-826E-897B-D0EC054A42D3</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8AB6921-FBBA-53B0-2083-7F0EA4D18890"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

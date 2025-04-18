@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0707DD91-8A23-2E58-5291-7774402EC977" containerWithKeyObject="3C43EF69-3414-D119-DBC4-19FE95E0121D" localFKIndex="CA97DC52-900E-2A61-3DC5-FB8E36FCE945" name="FK_vitaminas_unidade_medida">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>E8814AD1-C0FE-3D68-D32E-CD3ADF6E363D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<referredTableLongName>unidade_medida</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>00D3A4ED-A263-715A-3CBA-85C225492410</referredTableID>
+<keyObject>87900ACF-181C-8867-C878-AFEA388C3AA8</keyObject>
+<referredKeyID>87900ACF-181C-8867-C878-AFEA388C3AA8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_unidade_medida</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

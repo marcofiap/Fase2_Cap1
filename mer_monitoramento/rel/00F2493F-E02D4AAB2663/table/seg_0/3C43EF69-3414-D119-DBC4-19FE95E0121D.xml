@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C43EF69-3414-D119-DBC4-19FE95E0121D" name="vitaminas">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>7FD105E4-6F38-6BB1-93BB-44CA12A6F6B1</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vitamina" id="E28DA250-BDD5-7A1F-F418-CEFED6BB8BBC">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>B8AEC291-57F6-D43E-1E34-0DFFCFD50170</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unidade_medida_id_unidade_medida" id="99BAF5E4-E62D-F879-0870-A06162F91BE9">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>8DCB8BCE-4138-B38C-D548-8CF161AD916A</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0707DD91-8A23-2E58-5291-7774402EC977" referredColumn="A0C1785B-6D1E-07A8-F88A-D80A8AF743BF"/>
+</associations>
+</Column>
+<Column name="nome" id="340B8A9F-4BE3-B34C-7727-1E062829153F">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>4BFE23CB-48A0-99B3-01A6-7925CDA337F9</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ativo" id="6D7D554C-8111-E458-DD99-318DCFDC8819">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>2EBF533C-58F7-12C5-8496-8174210E4E56</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="FC94A5FB-D995-0B2F-8080-AF8335F718E3">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>ED3E0BEE-1C6E-7EF0-128F-DA35D2EEEB6D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9BD6C706-F592-108F-B39C-36907D4E9FCF" name="PK_vitaminas">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>E9166D62-AA45-758D-2A5C-50D893AE6F9A</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E28DA250-BDD5-7A1F-F418-CEFED6BB8BBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA97DC52-900E-2A61-3DC5-FB8E36FCE945" name="FK_vitaminas_unidade_medida">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>E8814AD1-C0FE-3D68-D32E-CD3ADF6E363D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99BAF5E4-E62D-F879-0870-A06162F91BE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BE989A2A-877A-5018-0D48-635D15A60FA7" containerWithKeyObject="232E479F-0931-7B29-C6B5-38F689B78319" localFKIndex="C3862D48-C6FE-96CC-0421-43C237596173" name="FK_agua_aplicada_cultura">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>BE0E9938-F527-6F27-9D3C-AED46B20F29D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<referredTableLongName>cultura</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>18EF143A-DD04-5045-A7A8-2BB2E0658AC8</referredTableID>
+<keyObject>E7CD7F45-6D25-A7C3-5AB9-CE7FB3FD7D74</keyObject>
+<referredKeyID>E7CD7F45-6D25-A7C3-5AB9-CE7FB3FD7D74</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_cultura</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

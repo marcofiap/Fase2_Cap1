@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F75520BE-2286-BC64-8682-DA271A14EA2C" containerWithKeyObject="D8B111CB-3673-D29D-540E-DAD50A21F171" localFKIndex="482D0FB8-E7E5-9EC6-D7FA-768D9D727906" name="FK_sensor_tipo_sensor_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>F788C963-777D-5636-CDC3-493D5FAA97A6</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<referredTableLongName>sensor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1B272D1F-D8D6-A8F3-160C-D6C4BCC61B5F</referredTableID>
+<keyObject>EEFA0DEF-B202-AA3D-3ECB-2602D8BFFE7D</keyObject>
+<referredKeyID>EEFA0DEF-B202-AA3D-3ECB-2602D8BFFE7D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_sensor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

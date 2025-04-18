@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="232E479F-0931-7B29-C6B5-38F689B78319" name="agua_aplicada">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>EB71378B-2471-4123-2597-8B1F6CA727E6</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_agua_aplicada" id="40E3FA52-EA97-1EEB-C9D6-43413DFDB0DE">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>318B93A6-AA9C-CEC9-21A8-C3EB629B50BD</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cultura_id_cultura" id="14315DFF-8CAC-5DE3-0EA6-708A53728A38">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>C2831A53-3619-9D78-1D80-2E8C36AEC164</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE989A2A-877A-5018-0D48-635D15A60FA7" referredColumn="B8AB6921-FBBA-53B0-2083-7F0EA4D18890"/>
+</associations>
+</Column>
+<Column name="sensor_id_sensor" id="CECE1857-B599-D9E1-AD49-7FB710A617A2">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>83B8162A-3429-AED7-11B4-896A7D2FE896</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2019E34D-8944-CF2E-DDD0-3C51764D6D5E" referredColumn="F2DD7579-F8D9-F199-2DA1-7026F130A319"/>
+</associations>
+</Column>
+<Column name="volume_agua_aplicada" id="5E45FF5C-41E0-11B1-16B5-93015F79F91B">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>CEC32BA5-127C-DE18-893E-B65B47B02D7D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,7,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_inicio_aplicacao" id="ED8BAED1-DCB2-9925-0274-E73C1D9D9049">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>26677A6F-B36E-0173-D4D6-E056F35C744E</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_hora_fim_aplicacao" id="B0A667EF-FDA6-36E4-3879-533AECCBDD43">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>F335A91F-721F-BB67-B7D8-6672676A628D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="agua_aplicada_manualmente" id="DD748B0B-06B8-EA64-BD67-F2BA94E10CC9">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Verdadeiro para se agua aplicada manualmente sem utilizar sensores - Valor padrao = false]]></commentInRDBMS>
+<generatorID>34B29158-AC79-200A-6694-630F19E6D496</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>0</dataTypeSize>
+<ownDataTypeParameters>0,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="responsavel" id="0E7A6B58-5970-1940-0B84-3E825C1932EE">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>F9F35BB3-B1AC-6440-24D3-F33F7236E252</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacao" id="D9792A9E-7FB1-EFDA-E764-B17EEE7DF2A6">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>CA75C995-CBB6-8BE5-8B46-D06F7286891D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32A13A8D-E4F7-183B-6DE1-2A0C2C01C690" name="PK_agua_aplicada">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>751D6AE2-6B78-FAA0-E913-A463A86E8F98</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40E3FA52-EA97-1EEB-C9D6-43413DFDB0DE"/>
+<colUsage columnID="14315DFF-8CAC-5DE3-0EA6-708A53728A38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3862D48-C6FE-96CC-0421-43C237596173" name="FK_agua_aplicada_cultura">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>BE0E9938-F527-6F27-9D3C-AED46B20F29D</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14315DFF-8CAC-5DE3-0EA6-708A53728A38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9ACF2CDA-A5A7-8898-4128-5B3FD2F02AB5" name="FK_agua_aplicada_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>A33991DC-FFD9-BCB1-CBF1-6EE067C3A706</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CECE1857-B599-D9E1-AD49-7FB710A617A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

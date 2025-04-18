@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="27405623-F6FB-5B1E-BA29-EEEEA1CCBD4A" containerWithKeyObject="F7A2C2B5-2FF0-C03D-89B2-A91F8989D396" localFKIndex="E8B076B3-265E-EA93-E805-0A0CA1CFB171" name="FK_vitaminas_aplicadas_vitaminas">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>4C1855B2-AB89-C145-6A57-834C4A70DE36</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<referredTableLongName>vitaminas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3C43EF69-3414-D119-DBC4-19FE95E0121D</referredTableID>
+<keyObject>9BD6C706-F592-108F-B39C-36907D4E9FCF</keyObject>
+<referredKeyID>9BD6C706-F592-108F-B39C-36907D4E9FCF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_vitamina</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

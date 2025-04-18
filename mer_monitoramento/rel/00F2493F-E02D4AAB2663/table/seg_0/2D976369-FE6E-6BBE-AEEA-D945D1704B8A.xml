@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2D976369-FE6E-6BBE-AEEA-D945D1704B8A" name="calibracao_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>9DD44CFD-B38C-B3A5-0429-7E5B3FE20D90</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sensor_id_sensor" id="5EEFDD0A-52EA-1853-12D5-051C26E14F05">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>9EB14D0B-5DB4-3377-FF37-A6F19BFA1E35</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9817EAE1-2E34-1A67-7365-39EB2C084A95" referredColumn="F2DD7579-F8D9-F199-2DA1-7026F130A319"/>
+</associations>
+</Column>
+<Column name="data_calibracao" id="758AC217-BACB-AA7D-3637-2BC85F022A05">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>977880F9-5203-2261-334A-2E09E798AA90</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fator_calibracao" id="941AE32D-A224-E2E7-7809-40B0CB7A55F5">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>06C2EEC7-9B5E-F70C-D7CA-7F1F974FD201</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,6,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="responsavel" id="ABB4AA3F-5A6F-B7B8-3DF7-114124F4DB8D">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>81B42068-430D-2CFB-CF09-9EECA302A4FE</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A97D5CE7-0E0C-DFA9-8F36-F1D2654104E5" name="PK_calibracao_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>D00EED1F-C4B2-E71E-FFFB-B08D308869F8</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="758AC217-BACB-AA7D-3637-2BC85F022A05"/>
+<colUsage columnID="5EEFDD0A-52EA-1853-12D5-051C26E14F05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A257CA0-9A1D-81AD-C491-0F6F15681F2E" name="FK_calibracao_sensor_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>863AE6A6-F3B1-C91C-EBE4-7A472F2EA431</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EEFDD0A-52EA-1853-12D5-051C26E14F05"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

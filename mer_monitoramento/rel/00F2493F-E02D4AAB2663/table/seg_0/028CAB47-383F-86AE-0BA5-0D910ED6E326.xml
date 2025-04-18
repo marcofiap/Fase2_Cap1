@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="028CAB47-383F-86AE-0BA5-0D910ED6E326" name="tipo_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>C61E2780-AD63-E701-B65F-0DAFCD56D01F</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_sensor" id="BB07E276-3D6E-CAA5-31DA-78A158371EB3">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>53DB9DC4-163A-B39B-5B4B-7A60502063C2</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unidade_medida_id_unidade_medida" id="F6ECB5B1-DECC-1196-4244-67455F1E5F1F">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>23526848-538E-56DE-8645-91002B1E07AB</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2473C443-CEF0-7E7B-068A-2FB4DF8AFA07" referredColumn="A0C1785B-6D1E-07A8-F88A-D80A8AF743BF"/>
+</associations>
+</Column>
+<Column name="descricao" id="47DAFCA6-394F-47A9-3C28-4129463ECC53">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>9C41EEE9-6374-B1F2-B037-B91FCD5EEE0F</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0483BA48-34D3-7A58-49EB-7D9D4D708DD9" name="PK_tipo_sensor">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>A3652DD4-5E85-8DC4-28CA-2BFA02D4F256</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB07E276-3D6E-CAA5-31DA-78A158371EB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6481CEEF-60A3-143D-AF24-2E8718BD585A" name="FK_tipo_sensor_unidade_medida">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>B0139381-282E-63AB-DBA6-FF708173C27B</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6ECB5B1-DECC-1196-4244-67455F1E5F1F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

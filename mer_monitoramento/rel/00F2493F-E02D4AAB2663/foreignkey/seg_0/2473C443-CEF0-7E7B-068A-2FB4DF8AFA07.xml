@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2473C443-CEF0-7E7B-068A-2FB4DF8AFA07" containerWithKeyObject="028CAB47-383F-86AE-0BA5-0D910ED6E326" localFKIndex="6481CEEF-60A3-143D-AF24-2E8718BD585A" name="FK_tipo_sensor_unidade_medida">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>B0139381-282E-63AB-DBA6-FF708173C27B</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<referredTableLongName>unidade_medida</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>00D3A4ED-A263-715A-3CBA-85C225492410</referredTableID>
+<keyObject>87900ACF-181C-8867-C878-AFEA388C3AA8</keyObject>
+<referredKeyID>87900ACF-181C-8867-C878-AFEA388C3AA8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_unidade_medida</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7A2C2B5-2FF0-C03D-89B2-A91F8989D396" name="vitaminas_aplicadas">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>3CDA3217-2E99-345F-142D-14573B29DE99</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vitamina_aplicada" id="7F42285A-67AE-24E1-7BEA-57602DAB1558">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>A314CEA2-2B5E-516A-6B72-406877249362</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vitaminas_id_vitamina" id="070B902F-F497-7EF4-D4E9-ADAFBB2F80CB">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>4F65204B-8FA0-F1AC-E7BA-D3CE0A52590B</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27405623-F6FB-5B1E-BA29-EEEEA1CCBD4A" referredColumn="E28DA250-BDD5-7A1F-F418-CEFED6BB8BBC"/>
+</associations>
+</Column>
+<Column name="cultura_id_cultura" id="DDFC801D-6517-C551-1876-73C03A316FA2">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>52872DB7-9CC3-94ED-B119-A276E863707E</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB99772F-87EB-98F8-DD1A-1D57D91C8927" referredColumn="B8AB6921-FBBA-53B0-2083-7F0EA4D18890"/>
+</associations>
+</Column>
+<Column name="data_aplicacao" id="22E94A7B-EAEE-DDC6-B9BE-90EFF4605760">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>02DE30B7-EA45-35C4-A7AE-332737520DA2</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade" id="3A3E64C7-191C-42B3-9997-C2EF357EC334">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>F0B91A7E-09F1-D205-81C4-3AED520D1013</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="responsavel" id="B9B433B6-20E9-D52C-2EDD-9B7C4ED9AB01">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>9489FD06-0EA9-4EA4-E6C2-332B841D0E9F</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observacao" id="D3284CBF-B4EC-FB10-D074-FC3C572CB420">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>28D4E6B3-4C2A-4D4A-DFAB-1D6CC8B559E4</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14050672-E4E6-FDDD-771C-25E25A426764" name="PK_vitaminas_aplicadas">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>6C510382-FCC7-7996-B2D1-99692DD079EA</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F42285A-67AE-24E1-7BEA-57602DAB1558"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8B076B3-265E-EA93-E805-0A0CA1CFB171" name="FK_vitaminas_aplicadas_vitaminas">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>4C1855B2-AB89-C145-6A57-834C4A70DE36</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="070B902F-F497-7EF4-D4E9-ADAFBB2F80CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46EA7231-43ED-3028-3D42-EA8F441D869D" name="FK_vitaminas_aplicadas_cultura">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<generatorID>58F193BF-E33A-6E74-F0F0-E9FE00248392</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DDFC801D-6517-C551-1876-73C03A316FA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
