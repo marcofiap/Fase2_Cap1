@@ -20,11 +20,13 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cultura_id_cultura" id="14315DFF-8CAC-5DE3-0EA6-708A53728A38">
+<Column name="id_cultura" id="14315DFF-8CAC-5DE3-0EA6-708A53728A38">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sensor: id_cultura = sensor | Manualmente: agua_aplicada_manualmente = true e Exigir preenchimento de id_cultura]]></commentInRDBMS>
 <generatorID>C2831A53-3619-9D78-1D80-2E8C36AEC164</generatorID>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -36,7 +38,7 @@
 <colAssociation fkAssociation="BE989A2A-877A-5018-0D48-635D15A60FA7" referredColumn="B8AB6921-FBBA-53B0-2083-7F0EA4D18890"/>
 </associations>
 </Column>
-<Column name="sensor_id_sensor" id="CECE1857-B599-D9E1-AD49-7FB710A617A2">
+<Column name="id_sensor" id="CECE1857-B599-D9E1-AD49-7FB710A617A2">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>83B8162A-3429-AED7-11B4-896A7D2FE896</generatorID>
@@ -139,7 +141,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="40E3FA52-EA97-1EEB-C9D6-43413DFDB0DE"/>
-<colUsage columnID="14315DFF-8CAC-5DE3-0EA6-708A53728A38"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C3862D48-C6FE-96CC-0421-43C237596173" name="FK_agua_aplicada_cultura">
@@ -165,4 +166,24 @@
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_agua_aplicada_id_cultura" directorySegmentName="seg_0" id="3AE4A62F-7E5D-F62F-2027-2B67EB754494">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 16:33:07 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<rule><![CDATA[agua_aplicada_manualmente = true OR id_sensor is not null]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_agua_aplicada_data_ini" directorySegmentName="seg_0" id="FAF9D45F-2A3C-310C-60C5-6BBEE4B7B14E">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 16:36:31 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<rule><![CDATA[data_hora_inicio_aplicacao < data_hora_fim_aplicacao]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_agua_aplicada_data_fim" directorySegmentName="seg_0" id="FB62239B-7EF4-83CC-C311-FA51BCAA17A3">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 16:36:31 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<rule><![CDATA[data_hora_fim_aplicacao > data_hora_inicio_aplicacao]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
 </Table>

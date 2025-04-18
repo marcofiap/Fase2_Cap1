@@ -98,7 +98,7 @@ O sistema permite:
 |------------------------------|--------------|-------------|
 | `id_agua_aplicada`           | NUMERIC(10)  | PK          |
 | `id_sensor`                  | NUMERIC(6)   | FK opcional se aplicação for manual |
-| `id_cultura`                 | NUMERIC(5)   | FK          |
+| `id_cultura`                 | NUMERIC(5)   | FK Dado por sensor: id_cultura = sensor | Manualmente: agua_aplicada_manualmente = true e Exigir preenchimento de id_cultura         |
 | `volume_agua_aplicada`       | DECIMAL(7,4) | obrigatório |
 | `data_hora_inicio_aplicacao` | TIMESTAMP    | obrigatório |
 | `data_hora_fim_aplicacao`    | TIMESTAMP    | obrigatório |

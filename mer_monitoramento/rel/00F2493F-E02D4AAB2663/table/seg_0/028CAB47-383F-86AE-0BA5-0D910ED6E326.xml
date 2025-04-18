@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="unidade_medida_id_unidade_medida" id="F6ECB5B1-DECC-1196-4244-67455F1E5F1F">
+<Column name="id_unidade_medida" id="F6ECB5B1-DECC-1196-4244-67455F1E5F1F">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>23526848-538E-56DE-8645-91002B1E07AB</generatorID>
@@ -62,7 +62,17 @@
 <colUsage columnID="BB07E276-3D6E-CAA5-31DA-78A158371EB3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6481CEEF-60A3-143D-AF24-2E8718BD585A" name="FK_tipo_sensor_unidade_medida">
+<ind_PK_UK id="C649548E-0163-CB44-B5D6-1DCC7D75784F" name="UN_tipo_sensor_descricao">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 16:38:40 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47DAFCA6-394F-47A9-3C28-4129463ECC53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6481CEEF-60A3-143D-AF24-2E8718BD585A" name="FK_tp_sen_unid_med">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>B0139381-282E-63AB-DBA6-FF708173C27B</generatorID>

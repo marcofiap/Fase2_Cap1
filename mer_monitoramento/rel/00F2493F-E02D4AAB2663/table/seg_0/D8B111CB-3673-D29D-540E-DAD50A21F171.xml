@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="tipo_sensor_id_tipo_sensor" id="E5074CD5-68DE-86D3-B8FC-AC694F2C78EA">
+<Column name="id_tipo_sensor" id="E5074CD5-68DE-86D3-B8FC-AC694F2C78EA">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>C335E15B-B1E6-0ECA-F5F9-D064027A5247</generatorID>
@@ -24,7 +24,7 @@
 <colAssociation fkAssociation="8C64EA21-93FA-42CE-C86C-A64D1FACF7F2" referredColumn="BB07E276-3D6E-CAA5-31DA-78A158371EB3"/>
 </associations>
 </Column>
-<Column name="sensor_id_sensor" id="CBC62DD8-4275-B22A-6F40-F6F943193EAB">
+<Column name="id_sensor" id="CBC62DD8-4275-B22A-6F40-F6F943193EAB">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>3536A13C-78C3-C856-DBAC-D286F91850EC</generatorID>
@@ -55,7 +55,7 @@
 <colUsage columnID="E5074CD5-68DE-86D3-B8FC-AC694F2C78EA"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="482D0FB8-E7E5-9EC6-D7FA-768D9D727906" name="FK_sensor_tipo_sensor_sensor">
+<ind_PK_UK id="482D0FB8-E7E5-9EC6-D7FA-768D9D727906" name="FK_sen_tp_sen_sen">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>F788C963-777D-5636-CDC3-493D5FAA97A6</generatorID>
@@ -66,7 +66,7 @@
 <colUsage columnID="CBC62DD8-4275-B22A-6F40-F6F943193EAB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D46FDDCE-C1B9-56C5-F49F-728C165787D6" name="FK_sensor_tipo_sensor_tipo_sensor">
+<ind_PK_UK id="D46FDDCE-C1B9-56C5-F49F-728C165787D6" name="FK_sen_tp_sen_tp_sen">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>E9A94B69-A526-FE4D-FA42-09BB1B0966ED</generatorID>

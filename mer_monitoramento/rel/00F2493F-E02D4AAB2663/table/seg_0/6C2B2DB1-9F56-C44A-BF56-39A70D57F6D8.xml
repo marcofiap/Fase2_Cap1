@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,20,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="sensor_id_sensor" id="8A9581E7-79E4-EB98-8547-D542AA09D9E0">
+<Column name="id_sensor" id="8A9581E7-79E4-EB98-8547-D542AA09D9E0">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>B98A8CF5-63A8-FAEC-00C6-2A45AA0070DC</generatorID>
@@ -74,7 +74,7 @@
 <colUsage columnID="0E278494-344D-DC3A-4AC1-E508F9CA4415"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="41A00A97-FAF4-E60A-3342-0769CD05AE9C" name="FK_monitoramento_sensor">
+<ind_PK_UK id="41A00A97-FAF4-E60A-3342-0769CD05AE9C" name="FK_monit_sen">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>64216CCF-6E87-8D3E-5886-7D2747BF1C07</generatorID>

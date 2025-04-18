@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cultura_id_cultura" id="DF452E93-0C96-8AFD-46E3-854BF5646BC5">
+<Column name="id_cultura" id="DF452E93-0C96-8AFD-46E3-854BF5646BC5">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>82AF9F7F-0AF7-20FA-5A25-98A1F27AD455</generatorID>
@@ -74,7 +74,17 @@
 <colUsage columnID="F2DD7579-F8D9-F199-2DA1-7026F130A319"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6BF3444C-61BD-8AC1-00DD-E2A4B4D5F3C8" name="FK_sensor_cultura">
+<ind_PK_UK id="F33305ED-8794-736B-4BB0-C1B95FF6FE61" name="UN_sensor_num_serie">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 16:12:53 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42F66ABE-D734-E99B-8F3A-C90FD567FC29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BF3444C-61BD-8AC1-00DD-E2A4B4D5F3C8" name="FK_sen_cul">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>1CD2DE0B-FCFA-E915-1B01-2DFF3BEB0793</generatorID>

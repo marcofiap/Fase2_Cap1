@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="sensor_id_sensor" id="5EEFDD0A-52EA-1853-12D5-051C26E14F05">
+<Column name="id_sensor" id="5EEFDD0A-52EA-1853-12D5-051C26E14F05">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>9EB14D0B-5DB4-3377-FF37-A6F19BFA1E35</generatorID>
@@ -77,7 +77,7 @@
 <colUsage columnID="5EEFDD0A-52EA-1853-12D5-051C26E14F05"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0A257CA0-9A1D-81AD-C491-0F6F15681F2E" name="FK_calibracao_sensor_sensor">
+<ind_PK_UK id="0A257CA0-9A1D-81AD-C491-0F6F15681F2E" name="FK_calib_sen_sens">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>863AE6A6-F3B1-C91C-EBE4-7A472F2EA431</generatorID>

@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,6,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="unidade_medida_id_unidade_medida" id="99BAF5E4-E62D-F879-0870-A06162F91BE9">
+<Column name="id_unidade_medida" id="99BAF5E4-E62D-F879-0870-A06162F91BE9">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>8DCB8BCE-4138-B38C-D548-8CF161AD916A</generatorID>
@@ -87,7 +87,17 @@
 <colUsage columnID="E28DA250-BDD5-7A1F-F418-CEFED6BB8BBC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CA97DC52-900E-2A61-3DC5-FB8E36FCE945" name="FK_vitaminas_unidade_medida">
+<ind_PK_UK id="FA4A6336-8284-141F-E07B-4E026183D70D" name="UN_vitaminas_nome">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 16:16:19 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="340B8A9F-4BE3-B34C-7727-1E062829153F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA97DC52-900E-2A61-3DC5-FB8E36FCE945" name="FK_vitam_unid_med">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>E8814AD1-C0FE-3D68-D32E-CD3ADF6E363D</generatorID>

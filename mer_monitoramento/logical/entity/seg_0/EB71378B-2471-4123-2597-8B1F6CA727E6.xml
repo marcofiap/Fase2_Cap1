@@ -31,11 +31,13 @@
 <Attribute name="id_cultura" id="C2831A53-3619-9D78-1D80-2E8C36AEC164">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 14:01:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sensor: id_cultura = sensor | Manualmente: agua_aplicada_manualmente = true e Exigir preenchimento de id_cultura]]></commentInRDBMS>
 <generatorID>BE0E9938-F527-6F27-9D3C-AED46B20F29D</generatorID>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <referedAttribute>1257179E-E75E-CB40-55E1-999D57990EDF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -151,7 +153,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>318B93A6-AA9C-CEC9-21A8-C3EB629B50BD</attributeRef>
-<attributeRef>C2831A53-3619-9D78-1D80-2E8C36AEC164</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

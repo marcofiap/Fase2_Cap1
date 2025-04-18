@@ -20,7 +20,7 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="vitaminas_id_vitamina" id="070B902F-F497-7EF4-D4E9-ADAFBB2F80CB">
+<Column name="id_vitamina" id="070B902F-F497-7EF4-D4E9-ADAFBB2F80CB">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>4F65204B-8FA0-F1AC-E7BA-D3CE0A52590B</generatorID>
@@ -36,7 +36,7 @@
 <colAssociation fkAssociation="27405623-F6FB-5B1E-BA29-EEEEA1CCBD4A" referredColumn="E28DA250-BDD5-7A1F-F418-CEFED6BB8BBC"/>
 </associations>
 </Column>
-<Column name="cultura_id_cultura" id="DDFC801D-6517-C551-1876-73C03A316FA2">
+<Column name="id_cultura" id="DDFC801D-6517-C551-1876-73C03A316FA2">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>52872DB7-9CC3-94ED-B119-A276E863707E</generatorID>
@@ -115,7 +115,7 @@
 <colUsage columnID="7F42285A-67AE-24E1-7BEA-57602DAB1558"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E8B076B3-265E-EA93-E805-0A0CA1CFB171" name="FK_vitaminas_aplicadas_vitaminas">
+<ind_PK_UK id="E8B076B3-265E-EA93-E805-0A0CA1CFB171" name="FK_vitam_aplic_vitam">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>4C1855B2-AB89-C145-6A57-834C4A70DE36</generatorID>
@@ -126,7 +126,7 @@
 <colUsage columnID="070B902F-F497-7EF4-D4E9-ADAFBB2F80CB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="46EA7231-43ED-3028-3D42-EA8F441D869D" name="FK_vitaminas_aplicadas_cultura">
+<ind_PK_UK id="46EA7231-43ED-3028-3D42-EA8F441D869D" name="FK_vitam_aplic_cult">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>58F193BF-E33A-6E74-F0F0-E9FE00248392</generatorID>

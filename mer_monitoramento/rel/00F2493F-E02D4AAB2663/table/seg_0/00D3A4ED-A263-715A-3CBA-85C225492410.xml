@@ -58,5 +58,16 @@
 <colUsage columnID="A0C1785B-6D1E-07A8-F88A-D80A8AF743BF"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="024676B1-9184-1D3E-98C3-2ED180941357" name="UN_unid_med_desc_abrev">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 16:14:56 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F788841-A0FA-C6EB-CC44-C9019DF9D8BA"/>
+<colUsage columnID="0E3DC481-3608-3786-5E73-E4A82FF71134"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

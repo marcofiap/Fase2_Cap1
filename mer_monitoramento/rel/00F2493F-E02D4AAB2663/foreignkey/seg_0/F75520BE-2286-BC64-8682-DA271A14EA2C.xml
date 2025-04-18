@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F75520BE-2286-BC64-8682-DA271A14EA2C" containerWithKeyObject="D8B111CB-3673-D29D-540E-DAD50A21F171" localFKIndex="482D0FB8-E7E5-9EC6-D7FA-768D9D727906" name="FK_sensor_tipo_sensor_sensor">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F75520BE-2286-BC64-8682-DA271A14EA2C" containerWithKeyObject="D8B111CB-3673-D29D-540E-DAD50A21F171" localFKIndex="482D0FB8-E7E5-9EC6-D7FA-768D9D727906" name="FK_sen_tp_sen_sen">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-18 15:03:12 UTC</createdTime>
 <generatorID>F788C963-777D-5636-CDC3-493D5FAA97A6</generatorID>
