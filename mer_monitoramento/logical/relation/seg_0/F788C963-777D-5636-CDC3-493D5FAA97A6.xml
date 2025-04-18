@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="possui" directorySegmentName="seg_0" id="F788C963-777D-5636-CDC3-493D5FAA97A6">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="possuir" directorySegmentName="seg_0" id="F788C963-777D-5636-CDC3-493D5FAA97A6">
 <createdBy>marcoassumpcao</createdBy>
 <createdTime>2025-04-15 02:03:22 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>

@@ -6,47 +6,75 @@
 <autoRoute>false</autoRoute>
 <boxInbox>true</boxInbox>
 <showLegend>false</showLegend>
-<showLabels>false</showLabels>
-<showRelAttributes>false</showRelAttributes>
+<showLabels>true</showLabels>
+<showRelAttributes>true</showRelAttributes>
 <gridEnabled>false</gridEnabled>
 <showGrid>false</showGrid>
 <diagramColor>-1</diagramColor>
 <display>false</display>
 <notation>2</notation>
 <showAllDetails>false</showAllDetails>
+<showComments>true</showComments>
 <showClassificationTypes>true</showClassificationTypes>
 <showElements>true</showElements>
 <showDatatype>true</showDatatype>
-<showKeyAndIndexColumns>true</showKeyAndIndexColumns>
 <showDynamicProperties>true</showDynamicProperties>
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="28A139DF-750E-CA2B-331F-5A257B1774FA" otype="Entity" vid="CD7FD984-D407-464B-6004-4E8DC56FE7A7">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="912" y="204" width="214" height="87"/>
+<bounds x="969" y="535" width="214" height="86"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="2B8314C9-AE50-5A39-5FBD-896A7579CB39" otype="Note" vid="79AE5386-702D-446F-BAC6-80B6B6954CF9">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="298" y="405" width="60" height="26"/>
+<comment>Fraca</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="337857C5-783B-11FD-7A0D-F7B29A99EA14" otype="Entity" vid="FD78F45A-82A6-8BFF-4E1D-907DF4F78069">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="553" y="196" width="216" height="91"/>
+<bounds x="437" y="331" width="192" height="89"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="3CDA3217-2E99-345F-142D-14573B29DE99" otype="Entity" vid="6F23D050-DC36-90C4-B0BB-FA056DFE6615">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1022" y="219" width="237" height="124"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4B9EB5F1-5A04-221A-0146-80C4750173A7" otype="Entity" vid="32ECED51-D4BA-61FF-2DC9-CD3223E90943">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="532" y="420" width="268" height="96"/>
+<bounds x="708" y="270" width="268" height="88"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="7FD105E4-6F38-6BB1-93BB-44CA12A6F6B1" otype="Entity" vid="39F88843-46AE-A03E-1603-FA51373B305D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1004" y="21" width="232" height="98"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="9DD44CFD-B38C-B3A5-0429-7E5B3FE20D90" otype="Entity" vid="71DA8FEC-1792-5C7A-C87B-72B442141681">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="95" y="328" width="233" height="91"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-10027162</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="A1F525C6-F808-69E2-6CCE-6837CD833C9C" otype="Entity" vid="5FC146DC-7115-BC30-10FD-5DA51E91D93C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="95" y="23" width="235" height="84"/>
+<bounds x="607" y="17" width="235" height="71"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C15FD231-41B1-4616-3A70-767454C37423" otype="Entity" vid="FB447D49-569D-7481-DCC7-9D0A40BEDA36">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="882" y="40" width="271" height="86"/>
+<bounds x="476" y="160" width="201" height="64"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-205</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C61E2780-AD63-E701-B65F-0DAFCD56D01F" otype="Entity" vid="AF04151A-1505-FA8A-3374-C59E9E716849">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="468" y="17" width="225" height="85"/>
+<bounds x="141" y="154" width="225" height="75"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="EB71378B-2471-4123-2597-8B1F6CA727E6" otype="Entity" vid="6D8AA393-58C9-C22E-2E7E-31823879E229">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="114" y="189" width="264" height="122"/>
+<bounds x="16" y="500" width="730" height="152"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="EBDA0A06-90F6-0A6B-60D2-43AD346D5337" otype="Note" vid="8072D7A7-18D2-34D5-9CB4-0E7C8341640B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="655" y="213" width="87" height="28"/>
+<comment>Associativa</comment>
 </OView>
 </objectViews>
 <connectors>
@@ -55,8 +83,27 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="912" y="245"/>
-<point x="769" y="245"/>
+<point x="1054" y="535"/>
+<point x="1054" y="398"/>
+<point x="629" y="398"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="4C1855B2-AB89-C145-6A57-834C4A70DE36" otype="Relation" vid_source="39F88843-46AE-A03E-1603-FA51373B305D" vid_target="6F23D050-DC36-90C4-B0BB-FA056DFE6615">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1121" y="119"/>
+<point x="1129" y="219"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="58F193BF-E33A-6E74-F0F0-E9FE00248392" otype="Relation" vid_source="CD7FD984-D407-464B-6004-4E8DC56FE7A7" vid_target="6F23D050-DC36-90C4-B0BB-FA056DFE6615">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="805" y="507"/>
+<point x="1102" y="343"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="64216CCF-6E87-8D3E-5886-7D2747BF1C07" otype="Relation" vid_source="FD78F45A-82A6-8BFF-4E1D-907DF4F78069" vid_target="32ECED51-D4BA-61FF-2DC9-CD3223E90943">
@@ -64,8 +111,17 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="661" y="287"/>
-<point x="661" y="420"/>
+<point x="629" y="344"/>
+<point x="708" y="344"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="863AE6A6-F3B1-C91C-EBE4-7A472F2EA431" otype="Relation" vid_source="FD78F45A-82A6-8BFF-4E1D-907DF4F78069" vid_target="71DA8FEC-1792-5C7A-C87B-72B442141681">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="437" y="375"/>
+<point x="328" y="375"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="A33991DC-FFD9-BCB1-CBF1-6EE067C3A706" otype="Relation" vid_source="FD78F45A-82A6-8BFF-4E1D-907DF4F78069" vid_target="6D8AA393-58C9-C22E-2E7E-31823879E229">
@@ -73,8 +129,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="553" y="249"/>
-<point x="378" y="241"/>
+<point x="533" y="420"/>
+<point x="533" y="500"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="B0139381-282E-63AB-DBA6-FF708173C27B" otype="Relation" vid_source="5FC146DC-7115-BC30-10FD-5DA51E91D93C" vid_target="AF04151A-1505-FA8A-3374-C59E9E716849">
@@ -82,8 +138,27 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="330" y="62"/>
-<point x="468" y="62"/>
+<point x="607" y="59"/>
+<point x="300" y="59"/>
+<point x="300" y="154"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="BE0E9938-F527-6F27-9D3C-AED46B20F29D" otype="Relation" vid_source="CD7FD984-D407-464B-6004-4E8DC56FE7A7" vid_target="6D8AA393-58C9-C22E-2E7E-31823879E229">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="969" y="578"/>
+<point x="746" y="578"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="E8814AD1-C0FE-3D68-D32E-CD3ADF6E363D" otype="Relation" vid_source="5FC146DC-7115-BC30-10FD-5DA51E91D93C" vid_target="39F88843-46AE-A03E-1603-FA51373B305D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="842" y="54"/>
+<point x="1004" y="54"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="E9A94B69-A526-FE4D-FA42-09BB1B0966ED" otype="Relation" vid_source="AF04151A-1505-FA8A-3374-C59E9E716849" vid_target="FB447D49-569D-7481-DCC7-9D0A40BEDA36">
@@ -91,8 +166,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="693" y="71"/>
-<point x="882" y="71"/>
+<point x="366" y="192"/>
+<point x="476" y="192"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="F788C963-777D-5636-CDC3-493D5FAA97A6" otype="Relation" vid_source="FD78F45A-82A6-8BFF-4E1D-907DF4F78069" vid_target="FB447D49-569D-7481-DCC7-9D0A40BEDA36">
@@ -100,9 +175,9 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="769" y="196"/>
-<point x="833" y="169"/>
-<point x="882" y="126"/>
+<point x="506" y="331"/>
+<point x="506" y="306"/>
+<point x="506" y="224"/>
 </points>
 </Connector>
 </connectors>

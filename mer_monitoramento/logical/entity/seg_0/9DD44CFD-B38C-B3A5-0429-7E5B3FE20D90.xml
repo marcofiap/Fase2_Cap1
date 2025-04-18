@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="28A139DF-750E-CA2B-331F-5A257B1774FA" name="cultura">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9DD44CFD-B38C-B3A5-0429-7E5B3FE20D90" name="calibracao_sensor">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 00:17:00 UTC</createdTime>
+<createdTime>2025-04-18 12:59:38 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -15,48 +15,36 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_cultura" id="1257179E-E75E-CB40-55E1-999D57990EDF">
+<Attribute name="id_sensor" id="9EB14D0B-5DB4-3377-FF37-A6F19BFA1E35">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 00:17:08 UTC</createdTime>
+<createdTime>2025-04-18 13:02:47 UTC</createdTime>
+<generatorID>863AE6A6-F3B1-C91C-EBE4-7A472F2EA431</generatorID>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
 </engineerTo>
+<referedAttribute>6219D4D6-0559-E65A-BCD5-4919757F02E6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descricao_cultura" id="67871F56-B0ED-3503-64C6-48BAE85FBE86">
+<Attribute name="data_calibracao" id="977880F9-5203-2261-334A-2E09E798AA90">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 00:17:28 UTC</createdTime>
+<createdTime>2025-04-18 13:00:26 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ativo" id="A735CE65-3BDD-A23A-B412-EF358DAE1698">
+<Attribute name="fator_calibracao" id="06C2EEC7-9B5E-F70C-D7CA-7F1F974FD201">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-18 13:23:18 UTC</createdTime>
-<ownerDesignName>mer_monitoramento</ownerDesignName>
-<engineerTo>
-<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="area_plantada" id="56E275D5-FCB1-7494-A005-7476CD4AD43F">
-<createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 00:17:52 UTC</createdTime>
+<createdTime>2025-04-18 13:01:07 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -64,23 +52,38 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,6,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="responsavel" id="81B42068-430D-2CFB-CF09-9EECA302A4FE">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 13:01:41 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="AEE9E06E-1BD0-826E-897B-D0EC054A42D3" name="cultura PK">
+<identifier id="D00EED1F-C4B2-E71E-FFFB-B08D308869F8" name="calibracao_sensor PK">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 00:17:24 UTC</createdTime>
+<createdTime>2025-04-18 13:00:52 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>1257179E-E75E-CB40-55E1-999D57990EDF</attributeRef>
+<attributeRef>977880F9-5203-2261-334A-2E09E798AA90</attributeRef>
+<attributeRef>9EB14D0B-5DB4-3377-FF37-A6F19BFA1E35</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

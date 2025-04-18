@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB71378B-2471-4123-2597-8B1F6CA727E6" name="agua_aplicada">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3CDA3217-2E99-345F-142D-14573B29DE99" name="vitaminas_aplicadas">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-14 23:27:23 UTC</createdTime>
+<createdTime>2025-04-18 13:08:42 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_agua_aplicada" id="318B93A6-AA9C-CEC9-21A8-C3EB629B50BD">
+<Attribute name="id_vitamina_aplicada" id="A314CEA2-2B5E-516A-6B72-406877249362">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-14 23:29:10 UTC</createdTime>
+<createdTime>2025-04-18 13:08:58 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -28,10 +28,25 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_cultura" id="C2831A53-3619-9D78-1D80-2E8C36AEC164">
+<Attribute name="id_vitamina" id="4F65204B-8FA0-F1AC-E7BA-D3CE0A52590B">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-18 14:01:56 UTC</createdTime>
-<generatorID>BE0E9938-F527-6F27-9D3C-AED46B20F29D</generatorID>
+<createdTime>2025-04-18 13:19:05 UTC</createdTime>
+<generatorID>4C1855B2-AB89-C145-6A57-834C4A70DE36</generatorID>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<referedAttribute>B8AEC291-57F6-D43E-1E34-0DFFCFD50170</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cultura" id="52872DB7-9CC3-94ED-B119-A276E863707E">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 13:20:37 UTC</createdTime>
+<generatorID>58F193BF-E33A-6E74-F0F0-E9FE00248392</generatorID>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -43,25 +58,21 @@
 <dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_sensor" id="83B8162A-3429-AED7-11B4-896A7D2FE896">
+<Attribute name="data_aplicacao" id="02DE30B7-EA45-35C4-A7AE-332737520DA2">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-17 00:54:50 UTC</createdTime>
-<generatorID>A33991DC-FFD9-BCB1-CBF1-6EE067C3A706</generatorID>
+<createdTime>2025-04-18 13:19:19 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>6219D4D6-0559-E65A-BCD5-4919757F02E6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>6</dataTypePrecision>
+<logicalDatatype>LOGDT015</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="volume_agua_aplicada" id="CEC32BA5-127C-DE18-893E-B65B47B02D7D">
+<Attribute name="quantidade" id="F0B91A7E-09F1-D205-81C4-3AED520D1013">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-14 23:30:45 UTC</createdTime>
+<createdTime>2025-04-18 13:19:54 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -69,52 +80,13 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT026</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<dataTypeScale>4</dataTypeScale>
-<ownDataTypeParameters>,7,4</ownDataTypeParameters>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="data_hora_inicio_aplicacao" id="26677A6F-B36E-0173-D4D6-E056F35C744E">
+<Attribute name="responsavel" id="9489FD06-0EA9-4EA4-E6C2-332B841D0E9F">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-14 23:30:11 UTC</createdTime>
-<ownerDesignName>mer_monitoramento</ownerDesignName>
-<engineerTo>
-<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="data_hora_fim_aplicacao" id="F335A91F-721F-BB67-B7D8-6672676A628D">
-<createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 00:43:01 UTC</createdTime>
-<ownerDesignName>mer_monitoramento</ownerDesignName>
-<engineerTo>
-<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="agua_aplicada_manualmente" id="34B29158-AC79-200A-6694-630F19E6D496">
-<createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-18 13:57:13 UTC</createdTime>
-<commentInRDBMS><![CDATA[Verdadeiro para se agua aplicada manualmente sem utilizar sensores - Valor padrao = false]]></commentInRDBMS>
-<ownerDesignName>mer_monitoramento</ownerDesignName>
-<engineerTo>
-<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>0</dataTypeSize>
-<ownDataTypeParameters>0,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="responsavel" id="F9F35BB3-B1AC-6440-24D3-F33F7236E252">
-<createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-18 14:25:25 UTC</createdTime>
+<createdTime>2025-04-18 13:24:49 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -126,9 +98,9 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="observacao" id="CA75C995-CBB6-8BE5-8B46-D06F7286891D">
+<Attribute name="observacao" id="28D4E6B3-4C2A-4D4A-DFAB-1D6CC8B559E4">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-18 14:25:40 UTC</createdTime>
+<createdTime>2025-04-18 13:21:40 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -141,17 +113,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="751D6AE2-6B78-FAA0-E913-A463A86E8F98" name="agua_aplicada PK">
+<identifier id="6C510382-FCC7-7996-B2D1-99692DD079EA" name="vitaminas_aplicadas PK">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-14 23:29:27 UTC</createdTime>
+<createdTime>2025-04-18 13:09:21 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>318B93A6-AA9C-CEC9-21A8-C3EB629B50BD</attributeRef>
-<attributeRef>C2831A53-3619-9D78-1D80-2E8C36AEC164</attributeRef>
+<attributeRef>A314CEA2-2B5E-516A-6B72-406877249362</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

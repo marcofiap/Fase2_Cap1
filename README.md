@@ -1,119 +1,179 @@
-# 📊 Modelo Entidade-Relacionamento - Sistema de Monitoramento Agrícola
+# 🌾 MER - Sistema de Agricultura Inteligente
 
-Este documento descreve o modelo entidade-relacionamento (MER) atualizado para o sistema de monitoramento agrícola, incluindo sensores, calibração, culturas e aplicação de água.
-
----
-
-## 🗂️ Entidades
-
-### 🌾 `cultura`
-Armazena informações sobre as culturas agrícolas.
-
-| Campo              | Tipo         | Descrição                        |
-|-------------------|--------------|----------------------------------|
-| `id_cultura`       | NUMERIC(5)   | Identificador da cultura (PK)    |
-| `descricao_cultura`| VARCHAR(30)  | Nome ou descrição da cultura     |
-| `area_plantada`    | NUMERIC(10,2)| Área total plantada (em hectares)|
+Este documento descreve o **Modelo Entidade Relacionamento (MER)** utilizado para controle de sensores agrícolas, aplicação de água e vitaminas, calibração e monitoramento de culturas.
 
 ---
 
-### 📟 `sensor`
-Representa os sensores instalados no campo.
+## 📌 Visão Geral
 
-| Campo         | Tipo         | Descrição                              |
-|--------------|--------------|----------------------------------------|
-| `id_sensor`   | NUMERIC(6)   | Identificador do sensor (PK)           |
-| `id_cultura`  | NUMERIC(5)   | Cultura monitorada (FK → `cultura`)    |
-| `numero_serie`| VARCHAR(30)  | Número de série do sensor              |
+O sistema permite:
 
----
-
-### 🧪 `tipo_sensor`
-Define os tipos de sensores disponíveis.
-
-| Campo             | Tipo         | Descrição                                 |
-|------------------|--------------|-------------------------------------------|
-| `id_tipo_sensor`  | NUMERIC(3)   | Identificador do tipo (PK)                |
-| `id_unidade_medida`| NUMERIC(3) | Unidade usada (FK → `unidade_medida`)     |
-| `descricao`       | VARCHAR(30)  | Descrição do tipo de sensor               |
+- Gerenciar sensores e tipos de sensores com unidades de medida.
+- Aplicar água automaticamente (via sensores) ou manualmente (sem sensor).
+- Monitorar dados registrados por sensores.
+- Aplicar vitaminas em culturas com controle de quantidade e responsável.
+- Calibrar sensores com histórico.
+- Associar sensores a culturas plantadas.
 
 ---
 
-### 📐 `unidade_medida`
-Unidades de medida utilizadas pelos sensores.
+## 🧩 Entidades e Atributos
 
-| Campo              | Tipo         | Descrição                              |
-|-------------------|--------------|----------------------------------------|
-| `id_unidade_medida`| NUMERIC(3)   | Identificador da unidade (PK)          |
-| `descricao`        | VARCHAR(35)  | Nome da unidade                        |
-| `abreviacao`       | VARCHAR(5)   | Ex: °C, pH, %                           |
+### 🔹 `unidade_medida`
 
----
-
-### 💧 `agua_aplicada`
-Registra aplicações de água feitas via sensores.
-
-| Campo                       | Tipo          | Descrição                                 |
-|----------------------------|---------------|-------------------------------------------|
-| `id_agua_aplicada`          | NUMERIC(10)   | Identificador da aplicação (PK)           |
-| `id_sensor`                 | NUMERIC(6)    | Sensor utilizado (FK → `sensor`)          |
-| `volume_agua_aplicada`      | DECIMAL(7,4)  | Volume aplicado (litros)                  |
-| `data_hora_inicio_aplicacao`| Timestamp     | Início da aplicação                       |
-| `data_hora_fim_aplicacao`   | Timestamp     | Fim da aplicação                          |
+| Campo              | Tipo        |
+|--------------------|-------------|
+| `id_unidade_medida`| NUMERIC(3)  |
+| `descricao`        | VARCHAR(35) |
+| `abreviacao`       | VARCHAR(5)  |
 
 ---
 
-### 📈 `monitoramento`
-Dados registrados periodicamente pelos sensores.
+### 🔹 `tipo_sensor`
 
-| Campo                   | Tipo         | Descrição                                 |
-|------------------------|--------------|-------------------------------------------|
-| `id_monitoramento`      | NUMERIC(20)  | Identificador da leitura (PK)             |
-| `id_sensor`             | NUMERIC(6)   | Sensor relacionado (FK → `sensor`)        |
-| `valor`                 | NUMERIC(7,2) | Valor registrado                          |
-| `data_hora_monitoramento`| Timestamp   | Data/hora da leitura                      |
+| Campo               | Tipo        |
+|---------------------|-------------|
+| `id_tipo_sensor`    | NUMERIC(3)  |
+| `id_unidade_medida` | NUMERIC(3)  |
+| `descricao`         | VARCHAR(30) |
 
 ---
 
-## 🔁 Entidades Associativas
+### 🔹 `sensor`
 
-### 🧩 `sensor_tipo_sensor`
-Relacionamento N:N entre sensores e tipos de sensores.
-
-| Campo            | Tipo        | Descrição                              |
-|------------------|-------------|----------------------------------------|
-| `id_tipo_sensor` | NUMERIC(3)  | FK para `tipo_sensor` (PK composta)    |
-| `id_sensor`      | NUMERIC(6)  | FK para `sensor` (PK composta)         |
+| Campo          | Tipo         |
+|----------------|--------------|
+| `id_sensor`    | NUMERIC(6)   |
+| `id_cultura`   | NUMERIC(5)   |
+| `numero_serie` | VARCHAR(30)  |
+| `ativo`        | BOOLEAN(1)   |
 
 ---
 
-## 🧷 Entidades Fracas
+### 🔹 `sensor_tipo_sensor` (associativa)
 
-### 🧪 `calibracao_sensor`
-Registra eventos de calibração de sensores — **entidade fraca**.
+| Campo             | Tipo        |
+|-------------------|-------------|
+| `id_sensor`       | NUMERIC(6)  |
+| `id_tipo_sensor`  | NUMERIC(3)  |
 
-| Campo             | Tipo          | Descrição                                 |
-|------------------|---------------|-------------------------------------------|
-| `id_sensor`       | NUMERIC(6)    | Sensor calibrado (PK composta / FK)       |
-| `data_calibracao` | Timestamp     | Data da calibração (PK composta)          |
-| `fator_calibracao`| DECIMAL(6,3)  | Fator aplicado na calibração              |
-| `responsavel`     | VARCHAR(50)   | Responsável pela calibração               |
+---
 
-> **Observação:** A chave primária da entidade depende de `id_sensor`, caracterizando-a como **entidade fraca**.
+### 🔹 `cultura`
+
+| Campo              | Tipo         |
+|--------------------|--------------|
+| `id_cultura`       | NUMERIC(5)   |
+| `descricao_cultura`| VARCHAR(30)  |
+| `ativo`            | BOOLEAN(1)   |
+| `area_plantada`    | NUMERIC(10,2)|
+
+---
+
+### 🔹 `monitoramento`
+
+| Campo                    | Tipo         |
+|--------------------------|--------------|
+| `id_monitoramento`       | NUMERIC(20)  |
+| `id_sensor`              | NUMERIC(6)   |
+| `valor`                  | NUMERIC(7,2) |
+| `data_hora_monitoramento`| TIMESTAMP    |
+
+---
+
+### 🔹 `calibracao_sensor` (entidade fraca)
+
+| Campo             | Tipo         |
+|-------------------|--------------|
+| `id_sensor`       | NUMERIC(6)   |
+| `data_calibracao` | TIMESTAMP    |
+| `fator_calibracao`| DECIMAL(6,3) |
+| `responsavel`     | VARCHAR(50)  |
+
+---
+
+### 🔹 `agua_aplicada`
+
+| Campo                        | Tipo         | Observações |
+|------------------------------|--------------|-------------|
+| `id_agua_aplicada`           | NUMERIC(10)  | PK          |
+| `id_sensor`                  | NUMERIC(6)   | FK opcional se aplicação for manual |
+| `id_cultura`                 | NUMERIC(5)   | FK          |
+| `volume_agua_aplicada`       | DECIMAL(7,4) | obrigatório |
+| `data_hora_inicio_aplicacao` | TIMESTAMP    | obrigatório |
+| `data_hora_fim_aplicacao`    | TIMESTAMP    | obrigatório |
+| `agua_aplicada_manual`       | BOOLEAN      | padrão: false |
+| `responsavel`                | VARCHAR(50)  |
+| `observacao`                 | TEXT         |
+
+---
+
+### 🔹 `vitaminas`
+
+| Campo              | Tipo         |
+|--------------------|--------------|
+| `id_vitamina`      | NUMERIC(6)   |
+| `id_unidade_medida`| NUMERIC(3)   |
+| `nome`             | VARCHAR(30)  |
+| `descricao`        | VARCHAR(150) |
+| `ativo`            | BOOLEAN(1)   |
+
+---
+
+### 🔹 `vitaminas_aplicadas`
+
+| Campo                  | Tipo           |
+|------------------------|----------------|
+| `id_vitamina_aplicada` | NUMERIC(10)    |
+| `id_vitamina`          | NUMERIC(6)     |
+| `id_cultura`           | NUMERIC(5)     |
+| `data_aplicacao`       | TIMESTAMP      |
+| `quantidade`           | DECIMAL(10,2)  |
+| `responsavel`          | VARCHAR(50)    |
+| `observacao`           | TEXT           |
 
 ---
 
 ## 🔗 Relacionamentos
 
-- `sensor` ↔ `cultura`: muitos sensores podem pertencer a uma cultura.
-- `sensor` ↔ `monitoramento`: um sensor gera múltiplos monitoramentos.
-- `sensor` ↔ `agua_aplicada`: um sensor pode estar vinculado a várias aplicações.
-- `sensor` ↔ `tipo_sensor`: relacionamento N:N via `sensor_tipo_sensor`.
-- `tipo_sensor` ↔ `unidade_medida`: cada tipo de sensor mede uma unidade.
-- `sensor` ↔ `calibracao_sensor`: uma calibragem existe apenas em função de um sensor.
+### 🌱 `sensor` relaciona-se com:
+- `cultura`: N:1
+- `sensor_tipo_sensor`: N:N (via associativa)
+- `monitoramento`: 1:N
+- `agua_aplicada`: 1:N (se aplicação automatizada)
+- `calibracao_sensor`: 1:N (entidade fraca)
+
+### 💧 `agua_aplicada` pode:
+- Referenciar um `sensor` (automatizado)
+- Ou referenciar uma `cultura` (manual)
+- Controlado por `agua_aplicada_manual`
+
+### 🧪 `vitaminas_aplicadas` relaciona:
+- `vitaminas` → `vitaminas_aplicadas`: 1:N
+- `cultura` → `vitaminas_aplicadas`: 1:N
+
+### 📐 `tipo_sensor` relaciona-se com:
+- `unidade_medida`: N:1
+- `sensor_tipo_sensor`: 1:N
+
+### 🧮 `vitaminas` e `tipo_sensor` compartilham:
+- A mesma `unidade_medida`, via FK
+
+### ⚖️ unidade_medida relaciona-se com:
+- `tipo_sensor`: 1:N
+- `vitaminas`: 1:N
 
 ---
 
-## 📝 Considerações Finais
+## ✅ Integridade e Flexibilidade
 
-- Todos os campos obrigatórios estão sinalizados com `*` no diagrama original.
+- Permite registros históricos de monitoramento e calibração.
+- Aceita sensores sem tipo e aplicações manuais de água.
+- Usa entidades fortes, fracas e associativas.
+- Tabelas normalizadas.
+
+---
+
+## 📎 Direitos
+
+Este projeto foi desenvolvido para fins acadêmicos. Não é permitido o uso comercial sem autorização prévia do autor.

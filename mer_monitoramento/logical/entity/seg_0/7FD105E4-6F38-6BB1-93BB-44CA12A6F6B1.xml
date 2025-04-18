@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C61E2780-AD63-E701-B65F-0DAFCD56D01F" name="tipo_sensor">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FD105E4-6F38-6BB1-93BB-44CA12A6F6B1" name="vitaminas">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 01:56:01 UTC</createdTime>
+<createdTime>2025-04-18 13:09:58 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_tipo_sensor" id="53DB9DC4-163A-B39B-5B4B-7A60502063C2">
+<Attribute name="id_vitamina" id="B8AEC291-57F6-D43E-1E34-0DFFCFD50170">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 01:56:14 UTC</createdTime>
+<createdTime>2025-04-18 13:10:05 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -25,13 +25,13 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_unidade_medida" id="23526848-538E-56DE-8645-91002B1E07AB">
+<Attribute name="id_unidade_medida" id="8DCB8BCE-4138-B38C-D548-8CF161AD916A">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 01:57:16 UTC</createdTime>
-<generatorID>B0139381-282E-63AB-DBA6-FF708173C27B</generatorID>
+<createdTime>2025-04-18 13:16:25 UTC</createdTime>
+<generatorID>E8814AD1-C0FE-3D68-D32E-CD3ADF6E363D</generatorID>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -41,11 +41,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="descricao" id="9C41EEE9-6374-B1F2-B037-B91FCD5EEE0F">
+<Attribute name="nome" id="4BFE23CB-48A0-99B3-01A6-7925CDA337F9">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 01:56:29 UTC</createdTime>
+<createdTime>2025-04-18 13:18:17 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
@@ -56,18 +56,45 @@
 <dataTypeSize>30</dataTypeSize>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ativo" id="2EBF533C-58F7-12C5-8496-8174210E4E56">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 13:17:36 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="ED3E0BEE-1C6E-7EF0-128F-DA35D2EEEB6D">
+<createdBy>marcoassumpcao</createdBy>
+<createdTime>2025-04-18 13:10:32 UTC</createdTime>
+<ownerDesignName>mer_monitoramento</ownerDesignName>
+<engineerTo>
+<item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A3652DD4-5E85-8DC4-28CA-2BFA02D4F256" name="tipo_sensor PK">
+<identifier id="E9166D62-AA45-758D-2A5C-50D893AE6F9A" name="vitaminas PK">
 <createdBy>marcoassumpcao</createdBy>
-<createdTime>2025-04-15 01:56:27 UTC</createdTime>
+<createdTime>2025-04-18 13:19:02 UTC</createdTime>
 <ownerDesignName>mer_monitoramento</ownerDesignName>
 <engineerTo>
 <item key="00F2493F-3EB1-4604-25F0-E02D4AAB2663" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>53DB9DC4-163A-B39B-5B4B-7A60502063C2</attributeRef>
+<attributeRef>B8AEC291-57F6-D43E-1E34-0DFFCFD50170</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
